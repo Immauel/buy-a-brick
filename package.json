@@ -1,0 +1,11 @@
+{
+  "name": "buy_a_brick",
+  "version": "1.0.0",
+  "description": "standard bank donation app for buy a brick project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Immanuel Fransiskus",
+  "license": "ISC"
+}
