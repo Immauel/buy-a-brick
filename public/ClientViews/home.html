@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>buy-a-brick</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="buy a brick namibia, buy, brick, standard, bank, donate, build, house">
+    <meta name="description" content="buy a brick">
+    <meta name="author" content="Code Masters">
+    
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+  
+    <!-- Google Fonts -->
+    
+
+    <script>
+    function send() {
+      var b = document.getElementById("btn-input").value;
+      var a = document.getElementById("btn-input").value;
+      document.getElementById("sent_msg").innerHTML = b;
+      
+      if(a !=""){
+        if(a=="Hi?"){
+        document.getElementById("received_msg").innerHTML = "Hello there, how can we help you?";
+        }else if(a=="What are your contact details?"){
+        document.getElementById("received_msg").innerHTML = "Telephone: +0816580385, Email: info@buyabrick.com.na";
+        }else if(a=="Thank you."){
+        document.getElementById("received_msg").innerHTML = "Welcome.";
+        }else if(a=="Bye."){
+        document.getElementById("received_msg").innerHTML = "Bye, have a nice day.";
+        }else{
+        document.getElementById("received_msg").innerHTML = "We are processing your message, We will get back to you as soon as posible.";
+        }
+        document.getElementById("btn-input").value = "";
+        
+      }else{
+        document.getElementById("received_msg").innerHTML = "";
+      }
+    };
+    </script>
+
+    <script>
+      $(function() {
+        $(".video").click(function () {
+          var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+            $(theModal + ' iframe').attr('src', videoSRC);
+            $('.videoModal').css('top', $(window).height()/2 - $('.modal-window').height()/2);
+          });
+        });
+      });
+
+
+      </script>
+    
+    <!-- =======================================================
+      Theme Name: Bell
+      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+      Author: BootstrapMade.com
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+  </head>
+  
+  <body>
+    <!-- Page Content
+    ================================================== -->
+    <!-- Hero -->
+     <header id="header">
+        <div class="container">
+        
+          <div id="logo" class="pull-left">
+            <a href="index.html"><img src="images/logo.png" alt="" title="" /></img></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Bell</a></h1>-->
+          </div>
+            
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#/Donation">Donate Online</a></li>
+              <li><a href="#donationDrum">Donation drums</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li class="menu-has-children"><a href="">More</a>
+                <ul>                  
+                  <li><a href="#aim">Aim</a></li>
+                  <li><a href="#donor">Recent Donors</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#/game">Home Builder</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#subscribe">Subscibe</a></li>
+                </ul>
+              </li>
+              <li><a href="#/login">Sign In</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+          
+          <nav class="nav social-nav pull-right hidden-sm-down">
+            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#contact"><i class="fa fa-envelope"></i></a>
+          </nav>
+        </div>
+      </header><!-- #header -->
+
+    <section class="hero">
+      <div class="container text-center"> 
+        <div class="row">     
+          <div class="col-md-12">
+            <b>
+              <h1 class="display-3"><strong> Make Your Contribution To Build Houses For The Homeless</strong></h1>
+            </b>        
+          </div>
+          <div class="col-md-12">
+            <a class="btn btn-primary btn-lg" href="#/Donation">DONATE NOW</a> 
+            <a class="btn btn-info video btn-lg" data-video="https://www.youtube.com/embed/y4fzPRn9uaM" data-toggle="modal" data-target="#videoModal" >How It Works</a>         
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="padding-top: 15%;">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <iframe width="100%" height="350" src="" frameborder="0" style="padding: 0px"  allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Hero -->
+    
+  <!-- Header -->
+ 
+  
+    <!-- About -->
+
+    <section class="about" id="aim">
+      <div class="container text-center">
+        <h2>
+          <strong>Aim</strong> 
+        </h2>
+
+        <p>
+          The Standard Bank Buy-a-Brick initiative is a flagship corporate social investment campaign geared towards addressing the 
+          country’s housing needs for disadvantaged communities through the Shack Dwellers Federation of Namibia as well as supporting the Harambee Prosperity Plan endorsed by our President Dr. Hage Geingob. 
+        </p>
+      </div>
+    </section>
+    <!-- /About -->
+    <!-- Parallax -->
+     
+     
+     <section id="donationDrum">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title"><strong>Donation Drums</strong></h2>
+            <p>
+              This is the map which show different locations where donotion drums are found. Please, when you visit them, remember to put in a dollar
+            </p>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-lg-12">
+            <iframe frameborder=0 style='width:100%;height:500px;' src='https://www.zeemaps.com/pub?group=2724499'> </iframe>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+
+     <section class="team" id="donor">
+      <div class="container">
+        <h2 class="text-center">
+          <strong>Recent Donors</strong>
+        </h2>
+        <h4 class="text-center">
+          We highly appriciate your donation for housing!
+        </h4>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="images/nust.png">
+              <div class="card-title-wrap">
+                <span class="card-title">NUST</span> <span class="card-text">Quality education</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Donated N$ 10000
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  We thank you for your precious donation!
+                </p>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="images/picknpay.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Pick n Pay</span> <span class="card-text">Pick more and pay less</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Donated N$ 15000
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  We thank you for your precious donation!
+                </p>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="images/telecom.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Telcom</span> <span class="card-text">Stay connected</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Donated N$ 20000
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  We thank you for your precious donation!
+                </p>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="images/green.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Green Enterprise</span> <span class="card-text">Best IT support</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Donated N$ 25000
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  We thank you for your precious donation!
+                </p>
+              </div></a>
+            </div>
+          </div>
+
+          <div>
+            <p><a href="#/alldoner" class=" btn nbtn-primary">View all doners</a></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Team -->
+    <!-- @component: footer -->
+
+
+    <!-- Features -->
+
+    <section class="features" id="projects">
+      <div class="container">
+        <h2 class="text-center">
+          <strong>Projects Under Construction</strong>
+        </h2>
+
+        <div class="row">
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div>
+                  <img src="images/havana.jpg" width="80%" class="img-response">
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Havanna District, Windhoek
+                </h3>
+
+                <p>
+                  This construction of houses was completed in 2016
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div>
+                  <img src="images/rehoboth.jpg" width="80%" class="img-response">
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Rehoboth District , Windhoek
+                </h3>
+
+                <p>
+                  This construction of houses is under way, it will be completed end 2017
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div>
+                  <img src="images/dolam.jpg" width="80%" class="img-response">
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Dolam District 5 , Windhoek
+                </h3>
+
+                <p>
+                  This construction of houses is under way, it will be completed in 2018
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Features -->
+    <!-- Call to Action -->
+
+    
+    <!-- /Call to Action -->
+    <!-- Portfolio -->
+
+    <section class="portfolio" id="gallery">
+      <div class="container text-center">
+        <h2>
+          <strong>Gallery</strong>
+        </h2>
+
+        <p>
+          
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 1.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 2.gif">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 3.gif">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 4.gif">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 5.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 6.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 7.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="#"><img alt="" src="images/shack 8.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Help the shack dwellers
+                  </h3>
+
+                  <p class="card-text">
+                    We appreciate you contribution to this initiative.
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Portfolio -->
+    <!-- Team -->
+
+    
+
+    <section id="subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Subscribe for news latters</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-3 offset-lg-1">
+            
+          </div>
+          
+          <div class="col-lg-5">
+            <div class="form">
+              <div id="sendmessage"></div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your Cellphone/telephone number" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="subject" id="subject" placeholder="You Email" data-rule="email" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  
+                  <div class="text-center"><button type="submit">Subscribe</button></div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Contact Us</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-3 offset-lg-2">
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Location<br>Windhoek</p>
+              </div>
+              
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>info@buyabrick.com.na</p>
+              </div>
+              
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+264 81 658 0385</p>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="col-lg-5">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section >
+      
+      <div class="container">
+      <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-right:10px;">
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+                  <div class="panel-heading top-bar">
+                      <div class="col-md-8 col-xs-8">
+                          <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Live Chat</h3>
+                      </div>
+                      <div class="col-md-4 col-xs-4" style="text-align: right;">
+                          <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+                          <a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
+                      </div>
+                  </div>
+                  <div class="panel-body msg_container_base">
+            <div class="row msg_container base_receive">
+                          <div class="col-md-2 col-xs-2 avatar">
+                              <img src="" class=" img-responsive ">
+                          </div>
+                          <div class="col-md-10 col-xs-10">
+                              <div class="messages msg_receive">
+                                  <p>Hi the welcome. How can we help you?</p>
+                                  <time datetime="2009-11-13T20:00">Admin • 1 min</time>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row msg_container base_sent">
+                          <div class="col-md-10 col-xs-10">
+                              <div class="messages msg_sent">
+                                  <p id="sent_msg"></p>
+                                  <time datetime="2009-11-13T20:00">You • 1 min</time>
+                              </div>
+                          </div>
+                          <div class="col-md-2 col-xs-2 avatar">
+                              <img src="" class=" img-responsive ">
+                          </div>
+                      </div>
+                      <div class="row msg_container base_receive">
+                          <div class="col-md-2 col-xs-2 avatar">
+                              <img src="" class=" img-responsive ">
+                          </div>
+                          <div class="col-md-10 col-xs-10">
+                              <div class="messages msg_receive">
+                                  <p id="received_msg"></p>
+                                  <time datetime="2009-11-13T20:00">Admin • 1 min</time>
+                              </div>
+                          </div>
+                      </div>                   
+                  </div>
+                  <div class="panel-footer">
+                      <div class="row input-group">
+                          <input type="text" id="btn-input" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                          
+                          <span class="input-group-btn">
+                            <button class="btn btn-primary btn-sm" onclick="send()" id="btn-chat">Send</button>
+                          </span>
+                      </div>
+                  </div>
+          </div>
+          </div>
+      </div>
+
+    </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xs-12 col-lg-offset-5">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <img src="images/Standard 1.png">
+                </li>
+
+                <li class="list-inline-item">
+                  <img src="images/shackdwellers.png">
+                </li>
+
+                <li class="list-inline-item">
+                  <img src="">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+              <p class="copyright-text">
+                © Buy A Brick
+              </p>
+              <div class="credits">
+                  <!-- 
+                  
+                -->
+                <a href="#">Buy A Brick</a> by Code Masters
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 
+
+
+    <!-- Required JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/tether/js/tether.min.js"></script>
+    <script src="lib/stellar/stellar.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/easing/easing.js"></script>
+    <script src="lib/stickyjs/sticky.js"></script>
+    <script src="lib/parallax/parallax.js"></script>
+    <script src="lib/lockfixed/lockfixed.min.js"></script>
+    
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="js/custom.js"></script>
+    
+    <script src="contactform/contactform.js"></script>
+    
+  </body>
+</html>

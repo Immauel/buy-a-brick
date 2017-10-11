@@ -30,7 +30,7 @@ rabbitmq.subscribe('Users');
 
 rabbitmq.on('message', function(message) {
   var data = message.data;
-  Emailer.sendNotification(getMailOptions(data.email,"Sign Up Notification",
+  Emailer.sendNotification(Emailer.getMailOptions(data.email,"Sign Up Notification",
   	"Dear "+data.lastName+"<br>Your account is set up as "+data.role));
 
 });

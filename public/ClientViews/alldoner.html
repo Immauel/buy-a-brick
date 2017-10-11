@@ -1,0 +1,201 @@
+
+
+    <!-- Page Content
+    ================================================== -->
+    <!-- Hero -->
+<div>
+     <header id="header">
+        <div class="container">
+        
+          <div id="logo" class="pull-left">
+            <a href="index.html"><img src="images/logo.png" alt="" title="" /></img></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Bell</a></h1>-->
+          </div>
+            
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#/Donation">Donate Online</a></li>
+              <li><a href="#donationDrum">Donation drums</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li class="menu-has-children"><a href="">More</a>
+                <ul>                  
+                  <li><a href="#aim">Aim</a></li>
+                  <li><a href="#donor">Donors</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="game.html">Home Builder</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#subscribe">Subscibe</a></li>
+                </ul>
+              </li>
+              <li><a href="#/login">Sign In</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+          
+          <nav class="nav social-nav pull-right hidden-sm-down">
+            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#contact"><i class="fa fa-envelope"></i></a>
+          </nav>
+        </div>
+      </header><!-- #header -->
+      <section class="wrapper container">            
+              <!--overview start-->
+              <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header"><i class="fa fa-heart"></i> Donations</h3>
+                    <ol class="breadcrumb">
+                        <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-heart"></i>Donations</li>                          
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper" ng-init="Orgs()">
+                    <p align="center">
+
+                    
+                    <button type="button" ng-click="Orgs()" class=" btn btn-default" >Organisations</button> 
+                    <button type="button" ng-click="Inds()" class=" btn btn-default ">Individuals</button>
+                    <button type="button" ng-click="HAs()" class="btn btn-default">Housing Allowances</button>
+
+                  </p>
+            </div>
+            <div ng-show="isInd">
+                    <div class="panel panel-default users-content">
+                        <div class="panel-heading" style="background-color: #eeeeee">Individual</div>
+                            
+                                <div class="well">
+                                    <form class="form">
+                                        <h4>search: </h4><input type="text" class="form-control" name="search" ng-model="search">
+                                    </form>
+                                </div>
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Lsat Name</th>
+                                     
+                                        <th>Amount</th>
+                                        <th>Home Town</th>
+                                        
+                                    </tr>
+                                    <tr ng-repeat="individual in individualss | filter:search | orderBy:'amount'">
+                                        <td>{{$index + 1}}</td>
+                                        <td>{{individual.firstName}}</td>
+                                        <td>{{individual.lastName}}</td>
+                                        
+                                        <td>{{individual.amount}}</td>
+                                        <td>{{individual.homeTown}}</td>
+                                        
+                                    </tr>
+                                </table>
+                            </div>
+                </div> 
+
+                <div ng-show="isOrg">
+                    <div class="panel panel-default users-content">
+                        <div class="panel-heading" style="background-color: #eeeeee">Organisations</div>
+                            
+                                <div class="well">
+                                    <form class="form">
+                                        <h4>search: </h4><input type="text" class="form-control" name="search" ng-model="search">
+                                    </form>
+                                </div>
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th width="5%">#</th>
+                                        <th width="20%">Name</th>
+                                        <th width="20%">Amount</th>
+                                        <th width="20%">City</th>
+                                        
+                                    </tr>
+                                    <tr ng-repeat="org in orgss | filter:search | orderBy:'amount'">
+                                        <td>{{$index + 1}}</td>
+                                        <td>{{org.name}}</td>
+                                        <td>{{org.amount}}</td>
+                                         <td>{{org.city}}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                </div> 
+
+                <div ng-show="isHA" >
+                    <div class="panel panel-default users-content">
+                        <div class="panel-heading" style="background-color: #eeeeee">HA deductions</div>
+                            
+                                <div class="well">
+                                    <form class="form">
+                                        <h4>search: </h4><input type="text" class="form-control" name="search" ng-model="search">
+                                    </form>
+                                </div>
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th width="5%">#</th>
+                                        <th width="20%">First Name</th>
+                                        <th width="20%">Lsat Name</th>
+                                        <th width="20%">Email</th>
+                                        <th width="20%">Role</th>
+                                        <th width="10%">Action</th>
+                                    </tr>
+                                    <tr ng-repeat="ha in has | filter:search | orderBy:'amount'">
+                                        <td>{{$index + 1}}</td>
+                                        <td>{{ha.firstName}}</td>
+                                        <td>{{ha.lastName}}</td>
+                                        <td>{{ha.email}}</td>
+                                        <td>{{ha.role}}</td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="glyphicon glyphicon-edit" ng-click="editUser(user)"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                </div>  
+            
+
+            
+      </section>
+    
+
+    <footer class="site-footer">
+      <div class="bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xs-12 col-lg-offset-5">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <img src="images/Standard 1.png">
+                </li>
+
+                <li class="list-inline-item">
+                  <img src="images/shackdwellers.png">
+                </li>
+
+                <li class="list-inline-item">
+                  <img src="">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+              <p class="copyright-text">
+                © Buy A Brick
+              </p>
+              <div class="credits">
+                  <!-- 
+                  
+                -->
+                <a href="#">Buy A Brick</a> by Code Masters
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 
+
+    
+    
+    
+ 

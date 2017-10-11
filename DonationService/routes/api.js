@@ -11,7 +11,7 @@ var rabbitmq = new RabbitMQ('amqp://localhost');
 
 
 var Ind = require('../models/Individual.js');
-var Company = require('../models/Company.js');
+var Company = require('../models/Companies.js');
 var Company2 = require('../models/Company2.js');
 
 //All routes after this middleware are secured

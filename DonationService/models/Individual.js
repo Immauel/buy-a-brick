@@ -13,13 +13,12 @@ var indSchema = mongoose.Schema({
  		homeTown:String,
  		buyEraser: String, 
  		eraserOwner: String,
- 		eraserOwnerEmail:String,
- 		school:String,
+ 		eraserNumber:Number,
+ 		Bank:String,
  		amount: Number,
- 		paymentService:String,
+ 		paymentOption:String,
  		cardNumber:Number,
- 		ExpirationMonth:Number,
- 		ExpirationYear:Number,
+ 		ExpirationDate:Date,
  		SecurtyCode: String
 });
 

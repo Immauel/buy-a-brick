@@ -4,19 +4,20 @@ var mongoose=restful.mongoose;
 
 //Schema
 
-var comSchema = mongoose.Schema({
+var compSchema = mongoose.Schema({
  		name: String,
+ 		country:String,
  		email:{type: String, unique:true, required: true},
  		cellphone:{type: String, unique:true, required: true},
  		buyEraser: String, 
- 		eraserOwner: String,
- 		eraserOwnerEmail:String,
- 		school:String,
- 		amount: Number,
- 		paymentService:String,
+ 		eraserNumber: Number,
+ 		city: String,
+ 		Bank:String,
+ 		amount:String,
+ 		cardNumber: Number,
+ 		paymentOption:String,
  		cardNumber:Number,
- 		ExpirationMonth:Number,
- 		ExpirationYear:Number,
+ 		ExpirationDate:Date,
  		SecurtyCode: String
 });
 
